@@ -8,6 +8,8 @@ function id = tx_findEvents_basedOn_valueDuration(ssti,valThres,duraThres)
 %         id.endloc - the end dates of each mhw
 %         id.duration - the duration of each mhw
 % 
+% Note that the length of the output (i.e., length(id.duration)) thus represents the number of events
+%
 % Xu et al 2022
 %-----------------
 
