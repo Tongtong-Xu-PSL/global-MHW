@@ -8,10 +8,11 @@ Marine heatwaves (MHWs) are events characterized by prolonged anomalously warm o
 
 <img src="https://github.com/Tongtong-Xu-PSL/global-MHW/blob/main/schematic_mhw.png " width="40%" />
 
+A recent paper has extensively analyzed the occurrences of MHWs at multiple regions of the world and the changes of occurrences linked to climate change (Xu et al 2022). This repository serves as a code source associated with Xu et al 2022, mainly to provide codes that can be used to quantify occurrences of MHWs. Codes are written in MATLAB.
 
 ## 2. Computing number of events given a intensity and a duration
 
-
+Often, one might 
 
 ## 3. Deriving Intensity-Duration-Frequency (IDF) diagram
 
@@ -22,3 +23,4 @@ Hobday AJ, Alexander LV, Perkins SE, Smale DA, Straub SC, Oliver ECJ, et al. A h
 
 Hobday AJ, Oliver ECJ, Sen Gupta A, Benthuysen JA, Burrows MT, Donat MG, et al. Categorizing and Naming MARINE HEATWAVES. Oceanography 2018, 31(2): 162-173.
 
+Xu T, Newman M, Capotondi A, Stevenson S, Di Lorenzo E, Alexander M.A. An increase in marine heatwaves without significant changes in surface ocean temperature variability. Nature Communications 2022. In press.
