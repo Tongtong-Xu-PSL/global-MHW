@@ -12,7 +12,7 @@ A recent paper has extensively analyzed the occurrences of MHWs at multiple regi
 
 ## 2. Computing number of events given a intensity and a duration
 
-Often, one might 
+Given a sea surface temperature time series, one may be interested in how many events of a specific intensity (often 90% percentile, 95% percentile, 1$\sigma$, 2$\sigma$) last at least a certain duration (often 5 days, 1 months, 5 months).
 
 ## 3. Deriving Intensity-Duration-Frequency (IDF) diagram
 
