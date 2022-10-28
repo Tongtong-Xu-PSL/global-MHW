@@ -14,7 +14,7 @@ A recent paper has extensively analyzed the occurrences of MHWs at multiple regi
 
 Given a sea surface temperature time series, one may be interested in how many events of a specific intensity (often 90th percentile, 95th percentile, $1\sigma$, $2\sigma$) last at least a certain duration (often 5 days, 1 month, 5 months). 
 
-The following [MATLAB code](https://github.com/Tongtong-Xu-PSL/global-MHW/blob/main/tx_findEvents_basedOn_valueDuration.m) can be used to count the number of events, given an intensity and a duration. Our formal definition used in the code is to calculate the number of events that exceed $(\ge)$ a given intensity for a period longer than a given duration.
+The following [MATLAB code](https://github.com/Tongtong-Xu-PSL/global-MHW/blob/main/tx_findEvents_basedOn_valueDuration.m) can be used to count the number of events, given an intensity and a duration. Our formal definition used in the code is to calculate the number of events that exceed $(\ge)$ a given intensity for a period longer than $(\ge)$ a given duration.
 
 ```Matlab
 function id = tx_findEvents_basedOn_valueDuration(ssti,valThres,duraThres)
