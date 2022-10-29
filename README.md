@@ -79,7 +79,33 @@ end
 
 ## 3. Deriving Intensity-Duration-Frequency (IDF) diagram
 
-Often it is useful to quantify MHWs associated with various intensities and durations, instead of using a fixed pair of threshold. This is what we did in Xu et al 2022. That is, we derive the frequency (number of events) for each intensity and duration threshold pair, including intensities from $0.1\sigma$ to $3.1\sigma$ and durations from 1 to 16 months. The resulting statistics matrix is called Intensity-Duration-Frequency (IDF) diagram.
+Often it is useful to quantify MHWs associated with various intensities and durations, instead of using a fixed pair of threshold. This is what we did in Xu et al 2022. That is, we derive the frequency (number of events) for each intensity and duration threshold pair, including intensities from $0.1\sigma$ to $3.1\sigma$ and durations from 1 to 16 months. The resulting matrix of statistics is called Intensity-Duration-Frequency (IDF) diagram.
+
+This diagram can be derived by using the following [MATLAB code](https://github.com/Tongtong-Xu-PSL/global-MHW/blob/main/tx_IDF.m).
+
+```Matlab
+function Nmatrix = tx_IDF(x,intrange,durrange)
+%-----------------
+% Input: x is the time series in the size of [1, n]
+%        intrange is the intensity range, e.g. intrange = 0.1:0.1:1.5;
+%        durrange is the duration range, e.g. durrange = 1:16;
+% Output: Nmatrix is frequency matrix associated with each pair of thresholds
+%         This result can be visualized by pcolor(Nmatrix).
+%
+% Xu et al 2022
+%-----------------
+
+Nmatrix = zeros(length(intrange),length(durrange));
+for i = 1:length(intrange)
+    for j = 1:length(durrange)
+        id = tx_findEvents_basedOn_valueDuration(x,intrange(i),durrange(j));
+        if ~isempty(id)
+            Nmatrix(i,j) = length(id.duration);
+        end
+    end
+end
+
+```
 
 ### References
 
