@@ -79,7 +79,7 @@ end
 
 ## 3. Deriving Intensity-Duration-Frequency (IDF) diagram
 
-
+Often it is useful to quantify MHWs associated with various intensities and durations, instead of using a fixed pair of threshold. This is what we did in Xu et al 2022. That is, we derive the frequency (number of events) for each intensity and duration threshold pair, including intensities from $0.1\sigma$ to $3.1\sigma$ and durations from 1 to 16 months. The resulting statistics matrix is called Intensity-Duration-Frequency (IDF) diagram.
 
 ### References
 
