@@ -107,6 +107,10 @@ end
 
 ```
 
+## 4. Final Remarks
+
+This repository provides key elements of MHW analyses in Xu et al 2022 - quantifying MHW occurrences associated with different intensities and durations. If you find the materials useful, please help us by citing our very recent paper (Xu et al 2022)!
+
 ### References
 
 Hobday AJ, Alexander LV, Perkins SE, Smale DA, Straub SC, Oliver ECJ, et al. A hierarchical approach to defining marine heatwaves. Progress in Oceanography 2016, 141: 227-238.
